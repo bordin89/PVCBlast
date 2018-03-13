@@ -1,0 +1,463 @@
+[ 2017-03-28 13:31:39.1290 4700/b6ac8700 age/Wat/WatchdogMain.cpp:1281 ]: Starting Passenger watchdog...
+[ 2017-03-28 13:31:39.1350 4703/b6b22700 age/Cor/CoreMain.cpp:1070 ]: Starting Passenger core...
+[ 2017-03-28 13:31:39.1351 4703/b6b22700 age/Cor/CoreMain.cpp:245 ]: Passenger core running in multi-application mode.
+[ 2017-03-28 13:31:39.1383 4703/b6b22700 age/Cor/CoreMain.cpp:820 ]: Passenger core online, PID 4703
+[ 2017-03-28 13:31:39.1446 4714/b6b07700 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2017-03-28 13:31:39.1598 4714/b6b07700 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 4714
+App 4743 stdout: 
+App 4743 stderr:  --> passenger_native_support was compiled for Ruby API version 1.9.1, but you're currently running a Ruby interpreter with API version 2.1.0.
+App 4743 stderr:      Refusing to load existing passenger_native_support.
+App 4743 stderr:  [passenger_native_support.so] trying to compile for the current user (platypus-web-server) and Ruby interpreter...
+App 4743 stderr: 
+App 4743 stderr:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 4743 stderr: 
+[ 2017-03-28 13:31:41.6841 4703/b68ffb40 age/Cor/SecurityUpdateChecker.h:464 ]: Security update check: no update found (next check in 24 hours)
+App 4743 stderr:      Compilation successful. The logs are here:
+App 4743 stderr:      /tmp/passenger_native_support-12bv7ih.log
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so: [BUG] 
+App 4743 stderr: Segmentation fault at 0x0004b0
+App 4743 stderr: ruby 2.1.0p0 (2013-12-25 revision 44422) [i686-linux]
+App 4743 stderr: 
+App 4743 stderr: -- Control frame information -----------------------------------------------
+App 4743 stderr: c:0015 p:296831566 s:0061 e:000060 TOP    [FINISH]
+App 4743 stderr: c:0014 p:---- s:0059 e:000058 CFUNC  :require
+App 4743 stderr: c:0013 p:0115 s:0055 e:000054 METHOD /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55
+App 4743 stderr: c:0012 p:0018 s:0045 e:000044 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r
+App 4743 stderr: c:0011 p:0496 s:0040 e:000039 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r
+App 4743 stderr: c:0010 p:0081 s:0036 e:000035 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r
+App 4743 stderr: c:0009 p:0054 s:0033 e:000032 TOP    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r [FINISH]
+App 4743 stderr: c:0008 p:---- s:0031 e:000030 CFUNC  :require
+App 4743 stderr: c:0007 p:0115 s:0027 e:000026 METHOD /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55
+App 4743 stderr: c:0006 p:0018 s:0017 e:000016 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger.rb:235
+App 4743 stderr: c:0005 p:0052 s:0013 e:000012 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:76
+App 4743 stderr: c:0004 p:0109 s:0009 
+App 4743 stderr: e:000008 CLASS  /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:155
+App 4743 stderr: c:0003 p:0011 s:0006 e:000005 CLASS  /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:30
+App 4743 stderr: c:0002 p:0036 s:0004 E:ffffef54 EVAL   /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:29 [FINISH]
+App 4743 stderr: c:0001 p:0000 s:0002 E:ffffeb3c TOP    [FINISH]
+App 4743 stderr: 
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:29:in `<main>'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:155:in `<module:App>'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:76:in `init_passenger'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger.rb:235:in `require_passenger_lib'
+App 4743 stderr: /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+App 4743 stderr: /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:439:in `<top (required)>'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:52:in `start'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:221:in `compile_and_load'
+App 4743 stderr: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:423:in `load_native_extension'
+App 4743 stderr: /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+App 4743 stderr: /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+App 4743 stderr: 
+App 4743 stderr: -- C level backtrace information -------------------------------------------
+App 4743 stderr: rub
+App 4743 stderr: y(+0x15fee3) [0xb75f0ee3]
+App 4743 stderr: ruby(+0x1c2157) [0xb7653157]
+App 4743 stderr: ruby(rb_bug+0x44) [0xb76547d4]
+App 4743 stderr: ruby(+
+App 4743 stderr: 0xde15b) [0xb756f15b]
+App 4743 stderr: [0xb746e40c]
+App 4743 stderr: /lib/ld-linux.so.2(+0x94f7) [0xb74784f7]
+App 4743 stderr: /lib/ld-linux.so.2(+0x9c5c) [0xb7478c5c]
+App 4743 stderr: /lib/ld-linux.so.2(+0x9e89) [0xb7478e89]
+App 4743 stderr: /lib/i386-linux-gnu/libc.so.6(+0x12ab60) [0xb72d2b60]
+App 4743 stderr: /lib/i386-linux-gnu/libc.so.6(_dl_sym+0x17) [0xb72d2fe7]
+App 4743 stderr: /lib/i386-linux-gnu/libdl.so.2(+0xd67) [0xb73b1d67]
+App 4743 stderr: /li
+App 4743 stderr: b/ld-linux.so.2(+0xec7f) [0xb747dc7f]
+App 4743 stderr: /lib/i386-linux-gnu/libdl.so.2(+0x133a) [0xb73b233a]
+App 4743 stderr: /lib/i386-linux-gnu/libdl.so.2(dlsym+0x64) [0xb73b1de4]
+App 4743 stderr: ruby(dln_load+0xee) [0xb766819e]
+App 4743 stderr: ruby(+0x1c6b88) [0xb7657b88]
+App 4743 stderr: ruby(+0x15dc12) [0xb75eec12]
+App 4743 stderr: ruby(rb_require_safe+0x6b6) [0xb7659846]
+App 4743 stderr: ruby(+0x1466b8) [0xb75d76b8]
+App 4743 stderr: ruby(+0x14acb7) [0xb75dbcb7]
+App 4743 stderr: ruby(+0x1559d7) [0xb75e69d7]
+App 4743 stderr: ruby(+0x14f15f) [0xb75e015f]
+App 4743 stderr: ruby(+0x1532bf) [0xb75e42bf]
+App 4743 stderr: ruby(rb_iseq_eval+0xe5) [0xb75ee725]
+App 4743 stderr: ruby(+0x1c6609) [0xb7657609]
+App 4743 stderr: ruby(rb_require_safe+0x6fb) [0xb765988b]
+App 4743 stderr: ruby(+0x1466b8) [0xb75d76b8]
+App 4743 stderr: ruby(+0x14acb7) [0xb75dbcb7]
+App 4743 stderr: ruby(+0x1559d7) [0xb75e69d7]
+App 4743 stderr: ruby(+0x14f15f) [0xb75e015f]
+App 4743 stderr: ruby(+0x1532bf) [0xb75e42bf]
+App 4743 stderr: ruby(rb_iseq_eval_main+0x
+App 4743 stderr: 141) [0xb75ee8b1]
+App 4743 stderr: ruby(+0x190c6) [0xb74aa0c6]
+App 4743 stderr: ruby(ruby_run_node+0x71) [0xb74accf1]
+App 4743 stderr: ruby(+0x182a8) [0xb74a92a8]
+App 4743 stderr: /lib/i386-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0xb71c1533]
+App 4743 stderr: ruby(+0x182e1) [0xb74a92e1]
+App 4743 stderr: 
+App 4743 stderr: -- Other runtime information -----------------------------------------------
+App 4743 stderr: 
+App 4743 stderr: * Loaded script: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb
+App 4743 stderr: 
+App 4743 stderr: * Loaded features:
+App 4743 stderr: 
+App 4743 stderr:     0 enumerator.so
+App 4743 stderr:     1 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+App 4743 stderr:     2 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+App 4743 stderr:     3 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/rbconfig.rb
+App 4743 stderr:     4 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/compatibility.rb
+App 4743 stderr:     5 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/defaults.rb
+App 4743 stderr:     6 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/deprecate.rb
+App 4743 stderr:     7 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/errors.rb
+App 4743 stderr:     8 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/version.rb
+App 4743 stderr:     9 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/requirement.rb
+App 4743 stderr:    10 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/platform.rb
+App 4743 stderr:    11 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/basic_specification.rb
+App 4743 stderr:    12 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/stub_specification.rb
+App 4743 stderr:    13 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/util/stringio.rb
+App 4743 stderr:    14 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/specification.rb
+App 4743 stderr:    15 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/exceptions.rb
+App 4743 stderr:    16 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_gem.rb
+App 4743 stderr:    17 thread.rb
+App 4743 stderr:    18 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+App 4743 stderr:    19 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/monitor.rb
+App 4743 stderr:    20 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb
+App 4743 stderr:    21 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems.rb
+App 4743 stderr:    22 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger.rb
+App 4743 stderr:    23 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/constants.rb
+App 4743 stderr:    24 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+App 4743 stderr:    25 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/fileutils.rb
+App 4743 stderr:    26 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/tmpdir.rb
+App 4743 stderr:    27 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/utils/tmpio.rb
+App 4743 stderr:    28 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info.rb
+App 4743 stderr:    29 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info/operating_system.rb
+App 4743 stderr:    30 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info/ruby.rb
+App 4743 stderr:    31 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info/binary_compatibility.rb
+App 4743 stderr:    32 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/path_support.rb
+App 4743 stderr:    33 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/dependency.rb
+App 4743 stderr:    34 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/shellwords.rb
+App 4743 stderr:    35 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/utils/shellwords.rb
+App 4743 stderr: 
+App 4743 stderr: * Process memory map:
+App 4743 stderr: 
+App 4743 stderr: b6c6d000-b6c89000 r-xp 00000000 08:01 3670935    /lib/i386-linux-gnu/libgcc_s.so.1
+App 4743 stderr: b6c89000-b6c8a000 r--p 0001b000 08:01 3670935    /lib/i386-linux-gnu/libgcc_s.so.1
+App 4743 stderr: b6c8a000-b6c8b000 rw-p 0001c000 08:01 3670935    /lib/i386-linux-gnu/libgcc_s.so.1
+App 4743 stderr: b6c8b000-b6c95000 r-xp 00000000 08:01 3674627    /lib/i386-linux-gnu/libnss_files-2.15.so
+App 4743 stderr: b6c95000-b6c96000 r--p 00009000 08:01 3674627    /lib/i386-linux-gnu/libnss_files-2.15.so
+App 4743 stderr: b6c96000-b6c97000 rw-p 0000a000 08:01 3674627    /lib/i386-linux-gnu/libnss_files-2.15.so
+App 4743 stderr: b6c97000-b6ca1000 r-xp 00000000 08:01 3674629    /lib/i386-linux-gnu/libnss_nis-2.15.so
+App 4743 stderr: b6ca1000-b6ca2000 r--p 00009000 08:01 3674629    /lib/i386-linux-gnu/libnss_nis-2.15.so
+App 4743 stderr: b6ca2000-b6ca3000 rw-p 0000a000 08:01 3674629    /lib/i386-linux-gnu/libnss_nis-2.15.so
+App 4743 stderr: b6ca3000-b6cb9000 r-xp 00000000 08:01 3671020    /lib/i386-linux-gnu/libnsl-2.15.so
+App 4743 stderr: b6cb9000-b6cba000 r--p 00015000 08:01 3671020    /lib/i386-linux-gnu/libnsl-2.15.so
+App 4743 stderr: b6cba000-b6cbb000 rw-p 00016000 08:01 3671020    /lib/i386-linux-gnu/libnsl-2.15.so
+App 4743 stderr: b6cbb000-b6cbd000 rw-p 00000000 00:00 0 
+App 4743 stderr: b6cbd000-b6cc4000 r-xp 00000000 08:01 3674630    /lib/i386-linux-gnu/libnss_compat-2.15.so
+App 4743 stderr: b6cc4000-b6cc5000 r--p 00006000 08:01 3674630    /lib/i386-linux-gnu/libnss_compat-2.15.so
+App 4743 stderr: b6cc5000-b6cc6000 rw-p 00007000 08:01 3674630    /lib/i386-linux-gnu/libnss_compat-2.15.so
+App 4743 stderr: b6cd8000-b6efd000 r-xp 00000000 08:01 3416685    /home/platypus-web-server/.rvm/rubies/ruby-1.9.3-p551/lib/libruby.so.1.9.1
+App 4743 stderr: b6efd000-b6f00000 r--p 00224000 08:01 3416685    /home/platypus-web-server/.rvm/rubies/ruby-1.9.3-p551/lib/libruby.so.1.9.1
+App 4743 stderr: b6f00000-b6f02000 rw-p 00227000 08:01 3416685    /home/platypus-web-server/.rvm/rubies/ruby-1.9.3-p551/lib/libruby.so.1.9.1
+App 4743 stderr: b6f02000-b6f12000 rw-p 00000000 00:00 0 
+App 4743 stderr: b6f12000-b6f15000 r-xp 00000000 08:01 6435544    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so
+App 4743 stderr: b6f15000-b6f16000 r--p 00002000 08:01 6435544    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so
+App 4743 stderr: b6f16000-b6f17000 rw-p 00003000 08:01 6435544    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so
+App 4743 stderr: b6f17000-b6f1a000 r-xp 00000000 08:01 3045251    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+App 4743 stderr: b6f1a000-b6f1b000 r--p 00002000 08:01 3045251    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+App 4743 stderr: b6f1b000-b6f1c000 rw-p 00003000 08:01 3045251    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+App 4743 stderr: b6f1c000-b6f1f000 r-xp 00000000 08:01 3045239    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+App 4743 stderr: b6f1f000-b6f20000 r--p 00002000 08:01 3045239    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+App 4743 stderr: b6f20000-b6f21000 rw-p 00003000 08:01 3045239    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+App 4743 stderr: b6f21000-b6f23000 r-xp 00000000 08:01 3290692    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+App 4743 stderr: b6f23000-b6f24000 r--p 00001000 08:01 3290692    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+App 4743 stderr: b6f24000-b6f25000 rw-p 00002000 08:01 3290692    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+App 4743 stderr: b6f25000-b6fa6000 rw-p 00000000 00:00 0 
+App 4743 stderr: b6fa6000-b71a6000 r--p 00000000 08:01 1842212    /usr/lib/locale/locale-archive
+App 4743 stderr: b71a6000-b71a8000 rw-p 00000000 00:00 0 
+App 4743 stderr: b71a8000-b734e000 r-xp 00000000 08:01 3671007    /lib/i386-linux-gnu/libc-2.15.so
+App 4743 stderr: b734e000-b7350000 r--p 001a6000 08:01 3671007    /lib/i386-linux-gnu/libc-2.15.so
+App 4743 stderr: b7350000-b7351000 rw-p 001a8000 08:01 3671007    /lib/i386-linux-gnu/libc-2.15.so
+App 4743 stderr: b7351000-b7354000 rw-p 00000000 00:00 0 
+App 4743 stderr: b7354000-b737e000 r-xp 00000000 08:01 3671021    /lib/i386-linux-gnu/libm-2.15.so
+App 4743 stderr: b737e000-b737f000 r--p 00029000 08:01 3671021    /lib/i386-linux-gnu/libm-2.15.so
+App 4743 stderr: b737f000-b7380000 rw-p 0002a000 08:01 3671021    /lib/i386-linux-gnu/l
+App 4743 stderr: ibm-2.15.so
+App 4743 stderr: b7380000-b7388000 r-xp 00000000 08:01 3670986    /lib/i386-linux-gnu/libcrypt-2.15.so
+App 4743 stderr: b7388000-b7389000 r--p 00007000 08:01 3670986    /lib/i386-linux-gnu/libcrypt-2.15.so
+App 4743 stderr: b7389000-b738a000 rw-p 00008000 08:01 3670986    /lib/i386-linux-gnu/libcrypt-2.15.so
+App 4743 stderr: b738a000-b73b1000 rw-p 00000000 00:00 0 
+App 4743 stderr: b73b1000-b73b4000 r-xp 00000000 08:01 3670987    /lib/i386-linux-gnu/libdl-2.15.so
+App 4743 stderr: b73b4000-b73b5000 r--p 00002000 08:01 3670987    /lib/i386-linux-gnu/libdl-2.15.so
+App 4743 stderr: b73b5000-b73b6000 rw-p 00003000 08:01 3670987    /lib/i386-linux-gnu/libdl-2.15.so
+App 4743 stderr: b73b6000-b742d000 r-xp 00000000 08:01 1839790    /usr/lib/i386-linux-gnu/libgmp.so.10.0.2
+App 4743 stderr: b742d000-b742e000 r--p 00076000 08:01 1839790    /usr/lib/i386-linux-gnu/libgmp.so.10.0.2
+App 4743 stderr: b742e000-b7435000 rw-p 00077000 08:01 1839790    /usr/lib/i386-linux-gnu/libgmp.so.10.0.2
+App 4743 stderr: b7435000-b7436000 rw-p 00000000 00:00 0 
+App 4743 stderr: b7436000-b743d000 r-xp 00000000 08:01 3670932    /lib/i386-linux-gnu/librt-2.15.so
+App 4743 stderr: b743d000-b743e000 r--p 00006000 08:01 3670932    /lib/i386-linux-gnu/librt-2.15.so
+App 4743 stderr: b743e000-b743f000 rw-p 00007000 08:01 3670932    /lib/i386-linux-gnu/librt-2.15.so
+App 4743 stderr: b743f000-b7456000 r-xp 00000000 08:01 3674624    /lib/i386-linux-gnu/libpthread-2.15.so
+App 4743 stderr: b7456000-b7457000 r--p 00016000 08:01 3674624    /lib/i386-linux-gnu/libpthread-2.15.so
+App 4743 stderr: b7457000-b7458000 rw-p 00017000 08:01 3674624    /lib/i386-linux-gnu/libpthread-2.15.so
+App 4743 stderr: b7458000-b745a000 rw-p 00000000 00:00 0 
+App 4743 stderr: b745b000-b745c000 rw-p 00000000 00:00 0 
+App 4743 stderr: b745c000-b745e000 r-xp 00000000 08:01 3290696    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+App 4743 stderr: b745e000-b745f000 r--p 00001000 08:01 3290696    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+App 4743 stderr: b745f000-b7460000 rw-p 00002000 08:01 3290696    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+App 4743 stderr: b7460000-b7467000 r--s 00000000 08:01 1836377    /usr/lib/i386-linux-gnu/gconv/gconv-modules.cache
+App 4743 stderr: b7467000-b7468000 ---p 00000000 00:00 0 
+App 4743 stderr: b7468000-b746b000 rw-p 00000000 00:00 0          [stack:4748]
+App 4743 stderr: b746b000-b746c000 r--p 005e0000 08:01 1842212    /usr/lib/locale/locale-archive
+App 4743 stderr: b746c000-b746e000 rw-p 00000000 00:00 0 
+App 4743 stderr: b746e000-b746f000 r-xp 00000000 00:00 0          [vdso]
+App 4743 stderr: b746f000-b748f000 r-xp 00000000 08:01 3674626    /lib/i386-linux-gnu/ld-2.15.so
+App 4743 stderr: b748f000-b7490000 r--p 0001f000 08:01 3674626    /lib/i386-linux-gnu/ld-2.15.so
+App 4743 stderr: b7490000-b7491000 rw-p 00020000 08:01 3674626    /lib/i386-linux-gnu/ld-2.15.so
+App 4743 stderr: b7491000-b7716000 r-xp 00000000 08:01 3044831    /home/platypus-web-server/.rbenv/versions/2.1.0/bin/ruby
+App 4743 stderr: b7716000-b7719000 r--p 00285000 08:01 3044831    /home/platypus-web-server/.rbenv/versions/2.1.0/bin/ruby
+App 4743 stderr: b7719000-b771a000 rw-p 00288000 08:01 3044831    /home/platypus-web-server/.rbenv/versions/2.1.0/bin/ruby
+App 4743 stderr: b771a000-b7730000 rw-p 00000000 00:00 0 
+App 4743 stderr: b8ee8000-b947e000 rw-p 00000000 00:00 0          [heap]
+App 4743 stderr: bfbb7000-bfbd9000 rw-p 00000000 00:00 0 
+App 4743 stderr: 
+App 4743 stderr: 
+App 4743 stderr: [NOTE]
+App 4743 stderr: You may have encountered a bug in the Ruby interpreter or extension libraries.
+App 4743 stderr: Bug reports are welcome.
+App 4743 stderr: For details: http://www.ruby-lang.org/bugreport.html
+App 4743 stderr: 
+[ 2017-03-28 13:31:43.4479 4703/b687eb40 age/Cor/App/Implementation.cpp:304 ]: Could not spawn process for application /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/sequenceserver-1.0.9: An error occurred while starting up the preloader. It exited before signalling successful startup back to Phusion Passenger.
+  Error ID: d43048ce
+  Error details saved to: /tmp/passenger-error-e9NtHi.html
+  Message from application: An error occurred while starting up the preloader. It exited before signalling successful startup back to Phusion Passenger. Please read <a href="https://github.com/phusion/passenger/wiki/Debugging-application-startup-problems">this article</a> for more information about this problem.<br>
+<h2>Raw process output:</h2>
+<pre>
+ --&gt; passenger_native_support was compiled for Ruby API version 1.9.1, but you&apos;re currently running a Ruby interpreter with API version 2.1.0.
+     Refusing to load existing passenger_native_support.
+ [passenger_native_support.so] trying to compile for the current user (platypus-web-server) and Ruby interpreter...
+     (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+     Compilation successful. The logs are here:
+     /tmp/passenger_native_support-12bv7ih.log
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so: [BUG] Segmentation fault at 0x0004b0
+ruby 2.1.0p0 (2013-12-25 revision 44422) [i686-linux]
+
+-- Control frame information -----------------------------------------------
+c:0015 p:296831566 s:0061 e:000060 TOP    [FINISH]
+c:0014 p:---- s:0059 e:000058 CFUNC  :require
+c:0013 p:0115 s:0055 e:000054 METHOD /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55
+c:0012 p:0018 s:0045 e:000044 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r
+c:0011 p:0496 s:0040 e:000039 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r
+c:0010 p:0081 s:0036 e:000035 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r
+c:0009 p:0054 s:0033 e:000032 TOP    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.r [FINISH]
+c:0008 p:---- s:0031 e:000030 CFUNC  :require
+c:0007 p:0115 s:0027 e:000026 METHOD /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55
+c:0006 p:0018 s:0017 e:000016 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger.rb:235
+c:0005 p:0052 s:0013 e:000012 METHOD /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:76
+c:0004 p:0109 s:0009 e:000008 CLASS  /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:155
+c:0003 p:0011 s:0006 e:000005 CLASS  /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:30
+c:0002 p:0036 s:0004 E:ffffef54 EVAL   /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:29 [FINISH]
+c:0001 p:0000 s:0002 E:ffffeb3c TOP    [FINISH]
+
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:29:in `&lt;main&gt;&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:30:in `&lt;module:PhusionPassenger&gt;&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:155:in `&lt;module:App&gt;&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb:76:in `init_passenger&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger.rb:235:in `require_passenger_lib&apos;
+/home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&apos;
+/home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:439:in `&lt;top (required)&gt;&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:52:in `start&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:221:in `compile_and_load&apos;
+/home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/native_support.rb:423:in `load_native_extension&apos;
+/home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&apos;
+/home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require&apos;
+
+-- C level backtrace information -------------------------------------------
+ruby(+0x15fee3) [0xb75f0ee3]
+ruby(+0x1c2157) [0xb7653157]
+ruby(rb_bug+0x44) [0xb76547d4]
+ruby(+0xde15b) [0xb756f15b]
+[0xb746e40c]
+/lib/ld-linux.so.2(+0x94f7) [0xb74784f7]
+/lib/ld-linux.so.2(+0x9c5c) [0xb7478c5c]
+/lib/ld-linux.so.2(+0x9e89) [0xb7478e89]
+/lib/i386-linux-gnu/libc.so.6(+0x12ab60) [0xb72d2b60]
+/lib/i386-linux-gnu/libc.so.6(_dl_sym+0x17) [0xb72d2fe7]
+/lib/i386-linux-gnu/libdl.so.2(+0xd67) [0xb73b1d67]
+/lib/ld-linux.so.2(+0xec7f) [0xb747dc7f]
+/lib/i386-linux-gnu/libdl.so.2(+0x133a) [0xb73b233a]
+/lib/i386-linux-gnu/libdl.so.2(dlsym+0x64) [0xb73b1de4]
+ruby(dln_load+0xee) [0xb766819e]
+ruby(+0x1c6b88) [0xb7657b88]
+ruby(+0x15dc12) [0xb75eec12]
+ruby(rb_require_safe+0x6b6) [0xb7659846]
+ruby(+0x1466b8) [0xb75d76b8]
+ruby(+0x14acb7) [0xb75dbcb7]
+ruby(+0x1559d7) [0xb75e69d7]
+ruby(+0x14f15f) [0xb75e015f]
+ruby(+0x1532bf) [0xb75e42bf]
+ruby(rb_iseq_eval+0xe5) [0xb75ee725]
+ruby(+0x1c6609) [0xb7657609]
+ruby(rb_require_safe+0x6fb) [0xb765988b]
+ruby(+0x1466b8) [0xb75d76b8]
+ruby(+0x14acb7) [0xb75dbcb7]
+ruby(+0x1559d7) [0xb75e69d7]
+ruby(+0x14f15f) [0xb75e015f]
+ruby(+0x1532bf) [0xb75e42bf]
+ruby(rb_iseq_eval_main+0x141) [0xb75ee8b1]
+ruby(+0x190c6) [0xb74aa0c6]
+ruby(ruby_run_node+0x71) [0xb74accf1]
+ruby(+0x182a8) [0xb74a92a8]
+/lib/i386-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0xb71c1533]
+ruby(+0x182e1) [0xb74a92e1]
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/helper-scripts/rack-preloader.rb
+
+* Loaded features:
+
+    0 enumerator.so
+    1 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+    2 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+    3 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/rbconfig.rb
+    4 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/compatibility.rb
+    5 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/defaults.rb
+    6 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/deprecate.rb
+    7 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/errors.rb
+    8 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/version.rb
+    9 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/requirement.rb
+   10 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/platform.rb
+   11 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/basic_specification.rb
+   12 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/stub_specification.rb
+   13 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/util/stringio.rb
+   14 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/specification.rb
+   15 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/exceptions.rb
+   16 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_gem.rb
+   17 thread.rb
+   18 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+   19 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/monitor.rb
+   20 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb
+   21 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems.rb
+   22 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger.rb
+   23 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/constants.rb
+   24 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+   25 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/fileutils.rb
+   26 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/tmpdir.rb
+   27 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/utils/tmpio.rb
+   28 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info.rb
+   29 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info/operating_system.rb
+   30 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info/ruby.rb
+   31 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/platform_info/binary_compatibility.rb
+   32 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/path_support.rb
+   33 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/rubygems/dependency.rb
+   34 /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/shellwords.rb
+   35 /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/src/ruby_supportlib/phusion_passenger/utils/shellwords.rb
+
+* Process memory map:
+
+b6c6d000-b6c89000 r-xp 00000000 08:01 3670935    /lib/i386-linux-gnu/libgcc_s.so.1
+b6c89000-b6c8a000 r--p 0001b000 08:01 3670935    /lib/i386-linux-gnu/libgcc_s.so.1
+b6c8a000-b6c8b000 rw-p 0001c000 08:01 3670935    /lib/i386-linux-gnu/libgcc_s.so.1
+b6c8b000-b6c95000 r-xp 00000000 08:01 3674627    /lib/i386-linux-gnu/libnss_files-2.15.so
+b6c95000-b6c96000 r--p 00009000 08:01 3674627    /lib/i386-linux-gnu/libnss_files-2.15.so
+b6c96000-b6c97000 rw-p 0000a000 08:01 3674627    /lib/i386-linux-gnu/libnss_files-2.15.so
+b6c97000-b6ca1000 r-xp 00000000 08:01 3674629    /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6ca1000-b6ca2000 r--p 00009000 08:01 3674629    /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6ca2000-b6ca3000 rw-p 0000a000 08:01 3674629    /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6ca3000-b6cb9000 r-xp 00000000 08:01 3671020    /lib/i386-linux-gnu/libnsl-2.15.so
+b6cb9000-b6cba000 r--p 00015000 08:01 3671020    /lib/i386-linux-gnu/libnsl-2.15.so
+b6cba000-b6cbb000 rw-p 00016000 08:01 3671020    /lib/i386-linux-gnu/libnsl-2.15.so
+b6cbb000-b6cbd000 rw-p 00000000 00:00 0 
+b6cbd000-b6cc4000 r-xp 00000000 08:01 3674630    /lib/i386-linux-gnu/libnss_compat-2.15.so
+b6cc4000-b6cc5000 r--p 00006000 08:01 3674630    /lib/i386-linux-gnu/libnss_compat-2.15.so
+b6cc5000-b6cc6000 rw-p 00007000 08:01 3674630    /lib/i386-linux-gnu/libnss_compat-2.15.so
+b6cd8000-b6efd000 r-xp 00000000 08:01 3416685    /home/platypus-web-server/.rvm/rubies/ruby-1.9.3-p551/lib/libruby.so.1.9.1
+b6efd000-b6f00000 r--p 00224000 08:01 3416685    /home/platypus-web-server/.rvm/rubies/ruby-1.9.3-p551/lib/libruby.so.1.9.1
+b6f00000-b6f02000 rw-p 00227000 08:01 3416685    /home/platypus-web-server/.rvm/rubies/ruby-1.9.3-p551/lib/libruby.so.1.9.1
+b6f02000-b6f12000 rw-p 00000000 00:00 0 
+b6f12000-b6f15000 r-xp 00000000 08:01 6435544    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so
+b6f15000-b6f16000 r--p 00002000 08:01 6435544    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so
+b6f16000-b6f17000 rw-p 00003000 08:01 6435544    /home/platypus-web-server/.rvm/gems/ruby-1.9.3-p551/gems/passenger-5.1.2/buildout/ruby/ruby-2.1.0-x86-linux/passenger_native_support.so
+b6f17000-b6f1a000 r-xp 00000000 08:01 3045251    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+b6f1a000-b6f1b000 r--p 00002000 08:01 3045251    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+b6f1b000-b6f1c000 rw-p 00003000 08:01 3045251    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/etc.so
+b6f1c000-b6f1f000 r-xp 00000000 08:01 3045239    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+b6f1f000-b6f20000 r--p 00002000 08:01 3045239    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+b6f20000-b6f21000 rw-p 00003000 08:01 3045239    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/thread.so
+b6f21000-b6f23000 r-xp 00000000 08:01 3290692    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+b6f23000-b6f24000 r--p 00001000 08:01 3290692    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+b6f24000-b6f25000 rw-p 00002000 08:01 3290692    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/trans/transdb.so
+b6f25000-b6fa6000 rw-p 00000000 00:00 0 
+b6fa6000-b71a6000 r--p 00000000 08:01 1842212    /usr/lib/locale/locale-archive
+b71a6000-b71a8000 rw-p 00000000 00:00 0 
+b71a8000-b734e000 r-xp 00000000 08:01 3671007    /lib/i386-linux-gnu/libc-2.15.so
+b734e000-b7350000 r--p 001a6000 08:01 3671007    /lib/i386-linux-gnu/libc-2.15.so
+b7350000-b7351000 rw-p 001a8000 08:01 3671007    /lib/i386-linux-gnu/libc-2.15.so
+b7351000-b7354000 rw-p 00000000 00:00 0 
+b7354000-b737e000 r-xp 00000000 08:01 3671021    /lib/i386-linux-gnu/libm-2.15.so
+b737e000-b737f000 r--p 00029000 08:01 3671021    /lib/i386-linux-gnu/libm-2.15.so
+b737f000-b7380000 rw-p 0002a000 08:01 3671021    /lib/i386-linux-gnu/libm-2.15.so
+b7380000-b7388000 r-xp 00000000 08:01 3670986    /lib/i386-linux-gnu/libcrypt-2.15.so
+b7388000-b7389000 r--p 00007000 08:01 3670986    /lib/i386-linux-gnu/libcrypt-2.15.so
+b7389000-b738a000 rw-p 00008000 08:01 3670986    /lib/i386-linux-gnu/libcrypt-2.15.so
+b738a000-b73b1000 rw-p 00000000 00:00 0 
+b73b1000-b73b4000 r-xp 00000000 08:01 3670987    /lib/i386-linux-gnu/libdl-2.15.so
+b73b4000-b73b5000 r--p 00002000 08:01 3670987    /lib/i386-linux-gnu/libdl-2.15.so
+b73b5000-b73b6000 rw-p 00003000 08:01 3670987    /lib/i386-linux-gnu/libdl-2.15.so
+b73b6000-b742d000 r-xp 00000000 08:01 1839790    /usr/lib/i386-linux-gnu/libgmp.so.10.0.2
+b742d000-b742e000 r--p 00076000 08:01 1839790    /usr/lib/i386-linux-gnu/libgmp.so.10.0.2
+b742e000-b7435000 rw-p 00077000 08:01 1839790    /usr/lib/i386-linux-gnu/libgmp.so.10.0.2
+b7435000-b7436000 rw-p 00000000 00:00 0 
+b7436000-b743d000 r-xp 00000000 08:01 3670932    /lib/i386-linux-gnu/librt-2.15.so
+b743d000-b743e000 r--p 00006000 08:01 3670932    /lib/i386-linux-gnu/librt-2.15.so
+b743e000-b743f000 rw-p 00007000 08:01 3670932    /lib/i386-linux-gnu/librt-2.15.so
+b743f000-b7456000 r-xp 00000000 08:01 3674624    /lib/i386-linux-gnu/libpthread-2.15.so
+b7456000-b7457000 r--p 00016000 08:01 3674624    /lib/i386-linux-gnu/libpthread-2.15.so
+b7457000-b7458000 rw-p 00017000 08:01 3674624    /lib/i386-linux-gnu/libpthread-2.15.so
+b7458000-b745a000 rw-p 00000000 00:00 0 
+b745b000-b745c000 rw-p 00000000 00:00 0 
+b745c000-b745e000 r-xp 00000000 08:01 3290696    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+b745e000-b745f000 r--p 00001000 08:01 3290696    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+b745f000-b7460000 rw-p 00002000 08:01 3290696    /home/platypus-web-server/.rbenv/versions/2.1.0/lib/ruby/2.1.0/i686-linux/enc/encdb.so
+b7460000-b7467000 r--s 00000000 08:01 1836377    /usr/lib/i386-linux-gnu/gconv/gconv-modules.cache
+b7467000-b7468000 ---p 00000000 00:00 0 
+b7468000-b746b000 rw-p 00000000 00:00 0          [stack:4748]
+b746b000-b746c000 r--p 005e0000 08:01 1842212    /usr/lib/locale/locale-archive
+b746c000-b746e000 rw-p 00000000 00:00 0 
+b746e000-b746f000 r-xp 00000000 00:00 0          [vdso]
+b746f000-b748f000 r-xp 00000000 08:01 3674626    /lib/i386-linux-gnu/ld-2.15.so
+b748f000-b7490000 r--p 0001f000 08:01 3674626    /lib/i386-linux-gnu/ld-2.15.so
+b7490000-b7491000 rw-p 00020000 08:01 3674626    /lib/i386-linux-gnu/ld-2.15.so
+b7491000-b7716000 r-xp 00000000 08:01 3044831    /home/platypus-web-server/.rbenv/versions/2.1.0/bin/ruby
+b7716000-b7719000 r--p 00285000 08:01 3044831    /home/platypus-web-server/.rbenv/versions/2.1.0/bin/ruby
+b7719000-b771a000 rw-p 00288000 08:01 3044831    /home/platypus-web-server/.rbenv/versions/2.1.0/bin/ruby
+b771a000-b7730000 rw-p 00000000 00:00 0 
+b8ee8000-b947e000 rw-p 00000000 00:00 0          [heap]
+bfbb7000-bfbd9000 rw-p 00000000 00:00 0 
+
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+For details: http://www.ruby-lang.org/bugreport.html
+
+</pre>
+
+[ 2017-03-28 13:31:43.4885 4703/b5cffb40 age/Cor/Con/CheckoutSession.cpp:285 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is d43048ce. Please see earlier logs for details about the error.
+
+[ 2017-03-28 13:36:04.1387 4703/b5cffb40 age/Cor/CoreMain.cpp:585 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-03-28 13:36:04.1387 4703/b6b22700 age/Cor/CoreMain.cpp:989 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-03-28 13:36:04.1389 4703/b54feb40 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2017-03-28 13:36:04.1389 4703/b54feb40 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2017-03-28 13:36:04.1391 4703/b4c7cb40 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2017-03-28 13:36:04.1395 4703/b4c7cb40 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2017-03-28 13:36:04.1393 4703/b5cffb40 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2017-03-28 13:36:04.1395 4703/b5cffb40 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+
+[ 2017-03-28 13:36:04.1396 4714/b68ffb40 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-03-28 13:36:04.1396 4714/b6b07700 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-03-28 13:36:04.1397 4714/b68ffb40 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2017-03-28 13:36:04.1397 4714/b5cffb40 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2017-03-28 13:36:04.1397 4714/b5cffb40 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2017-03-28 13:36:04.1400 4714/b6b07700 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2017-03-28 13:36:04.1997 4703/b6b22700 age/Cor/CoreMain.cpp:1055 ]: Passenger core shutdown finished
